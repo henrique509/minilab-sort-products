@@ -23,4 +23,17 @@ const products = [
   },
 ];
 
-// Declare sua funçao aqui. Nao se esqueça de invocar a função para conseguir testar!
+function filterProducts(category) {
+
+const novaArray = []
+
+for (let i = 0 ; i < products.length; i++){
+  if (products[i].tags[2] === category){
+      novaArray.push(products[i])
+} else {
+  continue
+}
+}
+  console.log(novaArray)
+}
+filterProducts('apple')
